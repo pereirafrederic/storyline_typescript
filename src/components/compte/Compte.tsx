@@ -1,9 +1,11 @@
-// App external
+// externe
 import React, { PureComponent } from 'react'
 
-// Module internal
+// interne
 import './Compte.scss'
 import i18n from './i18n'
+
+// composants
 import Recuperation from './recuperation/Recuperation'
 import Identite from './identite/Identite'
 import CoordonneeBancaire from './coordonnee-bancaire/CoordonneeBancaire'

@@ -1,10 +1,12 @@
-// App external
+// externe
 import React, { PureComponent } from 'react'
 
-// Module internal
+// interne
 import './TopBar.scss'
 import i18n from './i18n'
-import Tile, { ETileTheme } from '../../../modules/visuel/tile/Tile'
+
+// composants
+import Tile, { ETileTheme } from '../../../modules/custom/visuel/tile/Tile'
 
 interface IProps {}
 

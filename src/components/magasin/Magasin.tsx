@@ -1,12 +1,13 @@
-// App external
+// externe
 import React, { PureComponent } from 'react'
+
+//composants
 import ParThematique from './par-thematique/ParThematique'
 import ParNote from './par-note/ParNote'
 import ParDon from './par-don/ParDon'
 import ParAuteur from './par-auteur/ParAuteur'
 
-// Module internal
-//import './Accueil.scss'
+
 
 interface IOwnProps {}
 interface IProps extends IOwnProps {}

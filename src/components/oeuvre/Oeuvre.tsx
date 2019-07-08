@@ -1,10 +1,10 @@
-// App external
+// externe
 import React, { PureComponent } from 'react'
+
+//composants
 import SerieLivre from './serie-livre/SerieLivre'
 import InfoFlash from './info-flash/InfoFlash'
 
-// Module internal
-//import './Accueil.scss'
 
 interface IOwnProps {
   id: string

@@ -1,12 +1,12 @@
-// App external
+//externe
 import React, { PureComponent } from 'react'
+
+// componsants
 import AuteurPage from './auteur-page/AuteurPage'
 import AuteurOeuvre from './auteur-oeuvres/AuteurOeuvre'
 import AuteurInscription from './auteur-inscription/AuteurInscription'
 import AuteurFinancement from './auteur-financement/AuteurFinancement'
 
-// Module internal
-//import './Accueil.scss'
 
 interface IOwnProps {
   id?: string

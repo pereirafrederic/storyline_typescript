@@ -1,15 +1,13 @@
-// App external
+// externe
 import React, { memo } from 'react'
 import Icon from '@mdi/react'
 import { Link } from 'react-router-dom'
 
-// App internal
+// custom
 import Spinner from '../spinner/Spinner'
 
-// Module internal
+// interne
 import './Button.scss'
-
-// Redux State Management
 
 export enum EButtonTheme {
   Dark = 'dark',

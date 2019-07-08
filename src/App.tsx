@@ -1,6 +1,12 @@
+// externe
+
 import React, { Component } from 'react'
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+
+// interne
 import './App.scss'
+
+//composant
 import Accueil from './components/accueil/Accueil'
 import Compte from './components/compte/Compte'
 import Auteur from './components/auteur/Auteur'
@@ -12,7 +18,9 @@ import Inscription from './components/inscription/Inscription'
 import Magasin from './components/magasin/Magasin'
 import Oeuvre from './components/oeuvre/Oeuvre'
 import Connexion from './components/connexion/Connexion'
-import Tile, { ETileTheme } from './modules/visuel/tile/Tile'
+
+// modules
+import Tile, { ETileTheme } from './modules/custom/visuel/tile/Tile'
 
 interface IProps {}
 

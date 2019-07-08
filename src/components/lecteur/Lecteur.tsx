@@ -1,5 +1,8 @@
-// App external
+// externe
 import React, { PureComponent } from 'react'
+
+
+// composants
 import LecteurTop from './lecteur-top/LecteurTop'
 import LecteurStatistique from './lecteur-statistiques/LecteurStatistique'
 import LecteurSouhaits from './lecteur-souhaits/LecteurSouhaits'
@@ -7,8 +10,6 @@ import LecteurNotes from './lecteur-notes/LecteurNotes'
 import LecteurLectures from './lecteur-lectures/LecteurLectures'
 import LecteurDons from './lecteur-dons/LecteurDons'
 
-// Module internal
-//import './Accueil.scss'
 
 interface IOwnProps {
   id?: string

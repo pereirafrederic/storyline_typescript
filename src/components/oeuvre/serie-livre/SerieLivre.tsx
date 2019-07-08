@@ -1,9 +1,9 @@
-// App external
+// externe
 import React, { PureComponent } from 'react'
+
+// composants
 import Livre from '../livre/Livre'
 
-// Module internal
-//import './Accueil.scss'
 
 interface IOwnProps {}
 interface IProps extends IOwnProps {}

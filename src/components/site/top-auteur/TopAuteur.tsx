@@ -1,8 +1,6 @@
-// App external
+// externe
 import React, { PureComponent } from 'react'
 
-// Module internal
-//import './Accueil.scss'
 
 interface IProps {}
 

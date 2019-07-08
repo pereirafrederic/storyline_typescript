@@ -1,9 +1,9 @@
 // Pour réduire les conflits CSS, convention de nommage BEM
 // http://getbem.com/naming/
-@import '../../modules/visuel/mixin/sizes.scss';
-@import '../../modules/visuel/mixin/color.scss';
-@import '../../modules/visuel/mixin/reactive.scss';
-@import '../../modules/visuel/mixin/responsive.scss';
+@import '../visuel/mixin/sizes.scss';
+@import '../visuel/mixin/color.scss';
+@import '../visuel/mixin/reactive.scss';
+@import '../visuel/mixin/responsive.scss';
 
 .Popup {
   position: fixed;

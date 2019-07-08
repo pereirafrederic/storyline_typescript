@@ -1,7 +1,9 @@
-// App external
+//externe
 import React, { PureComponent } from 'react'
-import Tile from '../../../modules/visuel/tile/Tile'
-import Button, { EButtonTheme } from '../../../modules/button/Button'
+
+// modules
+import Tile from '../../../modules/custom/visuel/tile/Tile'
+import Button, { EButtonTheme } from '../../../modules/custom/button/Button'
 
 // Module internal
 

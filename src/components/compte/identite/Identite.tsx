@@ -1,9 +1,9 @@
-// App external
+// externe
 import React, { PureComponent } from 'react'
-import Tile, { ETileTheme } from '../../../modules/visuel/tile/Tile'
-import TileItem from '../../../modules/tile-item/TileItem'
 
-// Module internal
+// custom
+import Tile, { ETileTheme } from '../../../modules/custom/visuel/tile/Tile'
+import TileItem from '../../../modules/custom/tile-item/TileItem'
 
 interface IOwnProps {}
 interface IProps extends IOwnProps {}

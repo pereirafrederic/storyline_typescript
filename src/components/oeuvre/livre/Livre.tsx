@@ -1,9 +1,8 @@
-// App external
+// externe
 import React, { PureComponent } from 'react'
-import Evenement from '../evenement/Evenement'
 
-// Module internal
-//import './Accueil.scss'
+// composants
+import Evenement from '../evenement/Evenement'
 
 interface IOwnProps {}
 interface IProps extends IOwnProps {}
