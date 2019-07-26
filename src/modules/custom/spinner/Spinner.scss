@@ -1,6 +1,6 @@
-@import '../visuel/mixin/sizes.scss';
-@import '..//visuel/mixin/color.scss';
-// https://codepen.io/peiche/pen/pvQxVo
+@import 'src/modules/sass/variables/responsive.scss';
+@import 'src/modules/sass/variables/sizes.scss';
+@import 'src/modules/sass/variables/color.scss';
 
 .Spinner {
   *,

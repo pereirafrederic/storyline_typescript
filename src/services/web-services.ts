@@ -1,10 +1,8 @@
-// App external
-
-import 'clientjs'
 
 // App internal
 
-const ROOT_PUBLIC = '/public'
+const ROOT = 'http://localhost:9001'
+const ROOT_USER = '/user'
 
 //response constante
 const RESPONSE_STATUS_200 = 200
@@ -19,8 +17,8 @@ const call = async (
   params?: { download?: boolean; files?: Array<File> }
 ) => {
   const headers = new Headers({})
-
-  const mode: RequestMode = 'cors'
+headers.set('Content-Type', 'application/json')
+  const mode: RequestMode = 'no-cors'//'cors'
   const credentials: RequestCredentials = 'include'
 
   const config: RequestInit = {
@@ -54,14 +52,24 @@ const call = async (
         encodeURIComponent(file.name).replace(/\'/g, '%27')
       )
     })
+    console.log("headers.delete")
     // Delete default Content-Type in order to force multipart/form-data content type
     headers.delete('Content-Type')
     config.body = formData
   } else headers.set('Content-Type', 'application/json')
 
+
   try {
-    const url = ''
-    const response = await fetch(url, config)
+    const url = urlWs
+    console.log(config.headers)
+    const response = await fetch(url, {
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: method,
+    body: config.body
+})
     const type = response.headers.get('content-type') || ''
     let result
     if (type.indexOf('application/json') > -1) result = response.json()
@@ -95,11 +103,11 @@ const call = async (
                 'data:application/pdf;base64,'
               )
               console.log(urlFile)
-              
+
               //const element = document.createElement('a')
               //element.href = urlFile
               //element.click()
-              
+
 
               const win = window.open()
               console.log(win)
@@ -112,7 +120,7 @@ const call = async (
               else console.log(' no win')
             }
           }
-        } else 
+        } else
         */
         //FPE saveAs(data, name)
       }
@@ -153,32 +161,31 @@ const postCall = (
 ) => {
   return call('POST', url, body, params)
 }
-
-export const ConfigWS = {
-  config: () => {
-    return fetch(`/configuration.json?t=${new Date().getTime()}`).then(
-      response => response.json()
-    )
-  },
+export const InscriptionWS = {
+  creerCompte: (pseudo: string, email: string, passwordOne: string, passwordTwo: string) => {
+    return postCall(`${ROOT}${ROOT_USER}/inscription`, {
+      pseudo,
+      email,
+      passwordOne,
+      passwordTwo
+    })
+  }
 }
 
 export const LoginWS = {
-  login: (username: string, password: string) => {
-    return postCall(`${'ROOT_OPEN'}/login`, {
-      username,
+  login: (pseudo: string, password: string) => {
+    return postCall(`${ROOT}${ROOT_USER}/login`, {
+      pseudo,
       password,
     })
   },
   logout: () => {
-    return postCall(`${'ROOT_SECURE'}${'ROOT_USERS'}${'ROOT_ME'}/logout`)
+    return postCall(`${ROOT}${'ROOT_USER'}/logout`)
   },
 }
 
 export const UserWS = {
   getCurrentUser: () => {
-    return getCall(`${'ROOT_SECURE'}${'ROOT_USERS'}${'ROOT_ME'}`)
-  },
-  setAccountCommunicationData: (id: number, data: any) => {
-    return postCall(`${'ROOT_SECURE'}${'ROOT_USERS'}/${id}/communication`, data)
+    return getCall(`${ROOT}${'ROOT_USER'}`)
   },
 }

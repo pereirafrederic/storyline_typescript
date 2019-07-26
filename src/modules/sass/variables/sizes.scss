@@ -1,0 +1,44 @@
+$sizeSpace1: 2px;
+$sizeSpace2: 2*$sizeSpace1;
+$sizeSpace3: 4*$sizeSpace1;
+$sizeSpace4: 8*$sizeSpace1;
+$sizeSpace5: 12*$sizeSpace1;
+$sizeSpace6: 16*$sizeSpace1;
+$sizeSpace7: 20*$sizeSpace1;
+$sizeSpace8: 24*$sizeSpace1;
+$sizeSpace9: 32*$sizeSpace1;
+
+
+
+
+$sizeBlockPaddingTopBottom: $sizeSpace6;
+$sizeBlockPaddingLeftRightMobile: $sizeSpace4;
+$sizeBlockPaddingLeftRightTabletAndDesktop: $sizeSpace6;
+$sizeBlockSpaceBewteen: $sizeSpace4;
+
+
+$sizeHeaderMobileHeightNotConnected: 30px;
+$sizeHeaderTabletHeightNotConnected: 140px;
+$sizeHeaderIconSize: 24px;
+
+
+$sizeBadgeSize: 24px;
+$sizeMenuWidth: 400px;
+$sizeResultIcon: 128px;
+$sizeButtonReactiveHeight: 40px;
+$sizeButtonRadius: 6px;
+$sizePopupFromTop: 100px;
+$sizePopupMaxWidth: 400px;
+$sizeTileItemIcon: 16px;
+$sizeTileItemPadding: $sizeSpace3;
+$sizeInfoIcon: 16px;
+$sizeAccountTile: 192px;
+$sizeIcon: 1.5rem;
+$sizeIconWidthForm: 0.6rem;
+$sizeIconHeightForm: 1.1rem;
+$sizeIconMarginSideForm: 5px;
+$sizeIconStateScreen: 6rem;
+$sizeRightPaneWidth: 310px;
+$sizeConnectHeaderHeightMobile: 128px;
+$sizeHeaderHeightTablet: 108px;
+$sizeBetweenElementsInForm: $sizeSpace6;

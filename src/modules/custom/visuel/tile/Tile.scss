@@ -1,6 +1,6 @@
-@import '../mixin/sizes.scss';
-@import '../mixin/color.scss';
-@import '../mixin/responsive.scss';
+@import 'src/modules/sass/variables/sizes.scss';
+@import 'src/modules/sass/variables/color.scss';
+@import 'src/modules/sass/variables/responsive.scss';
 .Tile {
   &.theme-INTERNAL {
     background-image: linear-gradient(

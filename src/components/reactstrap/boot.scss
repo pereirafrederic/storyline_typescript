@@ -1,0 +1,129 @@
+
+
+.Magasin{
+  flex-direction: row;
+  align-self: center;
+  flex-grow: 1 ;
+  .card{
+    flex-grow: 1 ;
+    text-align: center;
+    margin: 1em;
+    .horizontal{
+      flex-direction: row;
+
+      :not(:last-child){
+      margin-right: 1em
+      }
+    }
+  }
+}
+
+.Top{
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  .Top__tops {
+    flex-grow: 1;
+    flex-direction: row;
+    .TopAuteur, .TopThematique {
+          margin: 1em;
+    }
+  }
+}
+
+.link{
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.TopAuteur{
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+ .MagasinThematique {
+  flex-grow: 1;
+  flex-direction: row;
+  .card{
+
+    flex-shrink: 1;
+    margin: 1em;
+  }
+}
+
+.MagasinAuteur {
+  flex-grow: 1;
+  flex-direction: column;
+  .lettres-pagination{
+    flex-direction: row;
+    align-self: center;
+
+  }
+  .MagasinAuteur__auteur{
+    flex-grow: 1;
+    flex-direction: row;
+    align-self: center;
+    align-content: center;
+    .card{
+
+      flex-shrink: 1;
+      margin: 1em;
+    }
+  }
+
+}
+
+.MagasinOeuvre{
+
+  flex-grow: 1;
+  flex-direction: column;
+
+  .lettres-pagination{
+    flex-direction: row;
+    align-self: center;
+
+  }
+
+  .MagasinOeuvre__oeuvre{
+    flex-shrink:  1;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    align-content: flex-start;
+
+    .card {
+          margin: 1em;
+    }
+  }
+}
+
+
+.AuteurOeuvre{
+  flex-grow: 1;
+  flex-direction: column;
+
+.AuteurOeuvre__oeuvre{
+  flex-grow: 1;
+  flex-direction: row;
+}
+
+  .card{
+
+    flex-shrink: 1;
+    margin: 1em;
+  }
+}
+
+.TopThematique{
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}

@@ -1,12 +1,17 @@
-@import './modules/custom/visuel/mixin/color.scss';
+
+@import './modules/sass/variables/sizes.scss';
+@import './modules/sass/variables/color-component.scss';
+
+
+
 .App {
   display: flex;
   flex-direction: column;
 
   background-image: radial-gradient(
     ellipse at center,
-    $primary-color-light,
-    $primary-color-light2
+    $color-background-app-1,
+    $color-background-app-2
   );
   transition: left 150ms, opacity 150ms;
   opacity: 1;
@@ -14,8 +19,8 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  color: $primary-color-text;
-  text-shadow: 1px 1px 2px $primary-color;
+  color: $color-app-text;
+  text-shadow: 1px 1px 2px $color-app-text-shadow;
   font-family: 'Roboto';
   font-size: 14px;
   line-height: 16px !important;
@@ -25,20 +30,33 @@
 
   .App__TopBar {
     margin: 1em;
+
   }
 
   .App__Body {
     display: flex;
     flex-direction: row;
+      flex-grow: 1;
     .App__Body__Menu {
       margin: 1em;
+            flex-grow: 0;
     }
     .App__Body__Content {
       margin: 1em;
+      flex-grow: 1;
+      flex-direction:row;
+      @import './components/reactstrap/boot.scss';
+
+
     }
   }
 
   .App__footer {
-    margin: 1em;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 32px;
+    font-size: 11px;
+    line-height: 13px;
+    z-index: 0;
   }
 }

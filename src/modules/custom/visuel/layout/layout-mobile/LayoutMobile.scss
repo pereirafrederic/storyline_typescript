@@ -1,4 +1,6 @@
-@import '../../mixin/sizes.scss';
+@import 'src/modules/sass/variables/responsive.scss';
+@import 'src/modules/sass/variables/sizes.scss';
+@import 'src/modules/sass/variables/color.scss';
 
 .LayoutMobile {
   .Block {
